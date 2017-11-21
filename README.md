@@ -2,7 +2,7 @@
 
 # The App
 
-https://atelopuszeteki.shinyapps.io/appozone/
+[https://atelopuszeteki.shinyapps.io/appozone/](https://atelopuszeteki.shinyapps.io/appozone/)
 
 # Introduction
 
@@ -48,7 +48,9 @@ The SERVER structure:
 
 # How to use the app
 
-The app can be found at this address: https://atelopuszeteki.shinyapps.io/appozone/
+The app can be found at this address: 
+[https://atelopuszeteki.shinyapps.io/appozone/](https://atelopuszeteki.shinyapps.io/appozone/)
+
 
 Here a simple description to use it:
 
