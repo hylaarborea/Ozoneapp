@@ -1,0 +1,60 @@
+---
+title: "App presentation: <br> relation between Ozone and other variables"
+author: "PG"
+date: "21 November 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This is the final project, with the title "Shiny Application and Reproducible Pitch", of the course 
+["Developing Data Products"](https://www.coursera.org/learn/data-products)
+
+The goal of this app is to study how the Ozone concentration varies according
+to "Solar radiation", "Wind" and "Temperature"
+
+We consider the data set ***airquality*** included in the package datasets of R
+
+It contains the following varibles:
+```{r}
+names(airquality)
+```
+but we focus only on the first four of them
+
+
+## Details of the Data
+
+A look at the data:
+```{r cars, echo = TRUE}
+str(airquality)
+```
+
+## The app: a picture
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('./app_screenshot.png')
+```
+
+Here the app link: https://atelopuszeteki.shinyapps.io/appozone/
+
+## App description
+
+The UI structure:
+
+- by *selectInput* can select between the 3 predictors
+- by *sliderInput* can select the value of the predictor
+- by *checkboxInput* can select which model wants to show
+
+The SERVER structure:
+
+- 2 models have been implemented (linear and cubic model)
+- by *brushedPoints* one have to select, using the mouse, the points which will be interpolated
+- interpolating curves and values are calculated
+- fraction of points included in the interpolation calculated
+
+
+
